@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    background-color: rgb(150, 150, 150);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%); */
+}
+/* shop styles*/
+.shop{
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 269px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 1200px){
+    .shop{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+    
+@media (max-width: 600px){
+    .shop{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+
+  
+.item{
+    border: 2px solid black;
+    /* border-radius: 20px; */
+    box-shadow: 10px 20px 4px;
+}
+
+.details{
+    color: whitesmoke;
+    /* background-color: #212529; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px ;
+    /* border: 10px solid black; */
+    /* border-radius: 20px; */
+    /* width: 219px;
+    height: 200px; */
+    /* background-color: #333;*/ 
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: right; */
+    gap: 8px;
+}
+
+.bi-plus-lg{
+    color: green;
+    cursor: pointer;
+}
+
+.bi-dash-lg{
+    color: red;
+    cursor: pointer;
+}
+
+/* style rules for label and buttons */
+
+.text-centre{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ShopBtn, .checkout, .removeAll{
+    background-color: #212529;
+    color: white;
+    bottom: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.checkout{
+    background-color: lightsteelblue;
+    color: black;
+}
+
+.removeAll{
+    background-color: red;
+}
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/* style rule for shopping cart */
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+/* style rule for cart item */
+
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px ;
+    display: flex;
+}
+.cart-tem img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-price-x{
+    width: 270px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+
+}
+h1{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
