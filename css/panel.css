@@ -1,6 +1,6 @@
 /* Body styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     display: flex;
@@ -146,13 +146,73 @@ nav {
 }
 
 /* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Responsive adjustments */
+/* Styles for tablets and smaller screens */
+/* Styles for tablets and smaller screens */
 @media (max-width: 768px) {
+    /* Navigation menu layout */
     .nav-menu {
-        display: none;
+        display: flex; /* Maintain flex layout */
+        flex-direction: row; /* Keep items aligned horizontally */
+        justify-content: space-around; /* Space items evenly */
+        position: absolute;
+        background-color: #111; /* Match navbar background */
+        top: 60px; /* Below the navbar */
+        left: 0;
+        width: 100%; /* Full width for the nav menu */
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-menu li {
+        margin: 0; /* Remove vertical margin */
+        padding: 10px; /* Add padding for better spacing */
+        list-style: none; /* Remove default list styling */
     }
 
     nav {
         justify-content: space-between;
+    }
+
+    .wrapper {
+        width: 90%; /* Responsive width */
+        margin: 10px auto; /* Center the wrapper */
+    }
+
+    .head-title h1 {
+        font-size: 24px; /* Decrease font size */
+    }
+
+    #content {
+        padding-top: 60px; /* Adjust for navbar */
+    }
+}
+
+/* Styles for mobile phones (480px and smaller) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px;
+        height: auto; /* Allow dynamic height */
+    }
+
+    .nav-menu {
+        justify-content: space-between; /* Evenly space out items */
+    }
+
+    .boxes {
+        grid-template-columns: 1fr; /* Stack boxes vertically */
+    }
+
+    .box {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .logout-button {
+        align-self: flex-end; /* Keep logout button visible */
     }
 }
 
@@ -175,7 +235,6 @@ nav {
     font-size: 1.2em; /* Optional: Increase font size if needed */
 }
 
-
 .box:hover {
     background: #f0f0f0;
 }
@@ -197,6 +256,7 @@ nav {
 .box a:hover {
     text-decoration: underline;
 }
+
 .logo {
     height: 40px; /* Adjust height as needed */
     width: auto;
